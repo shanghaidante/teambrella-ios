@@ -786,12 +786,12 @@
 		6DBBF8011F9A561600524B1E /* Multisig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBF7FF1F9A561600524B1E /* Multisig.swift */; };
 		6DBBF8031F9A5F6800524B1E /* Unconfirmed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBF8021F9A5F6800524B1E /* Unconfirmed.swift */; };
 		6DBBF8041F9A5F6800524B1E /* Unconfirmed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBF8021F9A5F6800524B1E /* Unconfirmed.swift */; };
+		6DBD695E2093864000D1524F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DBD695D2093864000D1524F /* GoogleService-Info.plist */; };
+		6DBD695F2093864000D1524F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DBD695D2093864000D1524F /* GoogleService-Info.plist */; };
 		6DBF49291F80EF2600B236E2 /* HomePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBF49281F80EF2600B236E2 /* HomePresentationController.swift */; };
 		6DBF492B1F80F10B00B236E2 /* AnimationTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBF492A1F80F10B00B236E2 /* AnimationTools.swift */; };
 		6DBF492C1F80F21E00B236E2 /* HomePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBF49281F80EF2600B236E2 /* HomePresentationController.swift */; };
 		6DBF492D1F80F22300B236E2 /* AnimationTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBF492A1F80F10B00B236E2 /* AnimationTools.swift */; };
-		6DC1BB1F2077BF6F008661AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DC1BB1E2077BF6F008661AF /* GoogleService-Info.plist */; };
-		6DC1BB202077BF6F008661AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DC1BB1E2077BF6F008661AF /* GoogleService-Info.plist */; };
 		6DC1BB222077C8CF008661AF /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC1BB212077C8CF008661AF /* XLPagerTabStrip.framework */; };
 		6DC1BB232077C8CF008661AF /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC1BB212077C8CF008661AF /* XLPagerTabStrip.framework */; };
 		6DC2306A1ED07F0500FAC330 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC230691ED07F0500FAC330 /* Key.swift */; };
@@ -1424,9 +1424,9 @@
 		6DB922241F9E27CD009D3937 /* AbiArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AbiArguments.swift; path = Blockchain/AbiArguments.swift; sourceTree = SOURCE_ROOT; };
 		6DBBF7FF1F9A561600524B1E /* Multisig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multisig.swift; sourceTree = "<group>"; };
 		6DBBF8021F9A5F6800524B1E /* Unconfirmed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unconfirmed.swift; sourceTree = "<group>"; };
+		6DBD695D2093864000D1524F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6DBF49281F80EF2600B236E2 /* HomePresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePresentationController.swift; path = Scenes/Home/HomePresentationController.swift; sourceTree = "<group>"; };
 		6DBF492A1F80F10B00B236E2 /* AnimationTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationTools.swift; path = Helpers/AnimationTools.swift; sourceTree = "<group>"; };
-		6DC1BB1E2077BF6F008661AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6DC1BB212077C8CF008661AF /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLPagerTabStrip.framework; path = Carthage/Build/iOS/XLPagerTabStrip.framework; sourceTree = "<group>"; };
 		6DC230691ED07F0500FAC330 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		6DC2487B1F5D948E00D9396D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Team.stringsdict; sourceTree = "<group>"; };
@@ -1511,7 +1511,6 @@
 		6DEFCFB71F7A66D7008C306C /* SwitchUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SwitchUserCell.xib; path = View/Cells/SwitchUserCell.xib; sourceTree = "<group>"; };
 		6DEFE3CA2005286200615022 /* HomeCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeCardModel.swift; path = Model/Entities/HomeCardModel.swift; sourceTree = "<group>"; };
 		6DEFE3D02005355C00615022 /* InviteToTeamEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InviteToTeamEntity.swift; path = Model/Entities/InviteToTeamEntity.swift; sourceTree = "<group>"; };
-		6DEFE3ED2006523300615022 /* notification copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "notification copy-Info.plist"; path = "/Users/thorax/Developer/Teambrella/Teambrella-iOS/notification copy-Info.plist"; sourceTree = "<absolute>"; };
 		6DEFE3F22006544100615022 /* NotificationTeambrella.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationTeambrella.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEFE3F62006544100615022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DF2079C1FB4A11600E10B85 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
@@ -2020,7 +2019,6 @@
 			isa = PBXGroup;
 			children = (
 				6D4E5DDA1F7AB6870020DEE2 /* Surilla.plist */,
-				6DC1BB1E2077BF6F008661AF /* GoogleService-Info.plist */,
 			);
 			path = Surilla;
 			sourceTree = "<group>";
@@ -2325,7 +2323,7 @@
 				A3DA38407FE7184F4611CDC0 /* Frameworks */,
 				6D8F97171E8D1673008DC62E /* Teambrella-Bridging-Header.h */,
 				6DA1A5421FBF0B42000FDECA /* Notification-Bridging-Header.h */,
-				6DEFE3ED2006523300615022 /* notification copy-Info.plist */,
+				6DBD695D2093864000D1524F /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2853,6 +2851,7 @@
 				C57EED01CCD06144A330A0FF /* [CP] Check Pods Manifest.lock */,
 				6D4E5C261F7AB6870020DEE2 /* Sources */,
 				6D4E5D701F7AB6870020DEE2 /* Frameworks */,
+				6DBD695C2093853400D1524F /* Google Firebase */,
 				6D4E5D7F1F7AB6870020DEE2 /* Resources */,
 				6D4E5DD11F7AB6870020DEE2 /* Carthage */,
 				6D4E5DD41F7AB6870020DEE2 /* SwiftLint */,
@@ -2895,6 +2894,7 @@
 				5BF653B1A5278B620E9E183E /* [CP] Check Pods Manifest.lock */,
 				6DA4759C1E8ABEE600B56D9B /* Sources */,
 				6DA4759D1E8ABEE600B56D9B /* Frameworks */,
+				6DBD69602093868300D1524F /* Google Firebase */,
 				6DA4759E1E8ABEE600B56D9B /* Resources */,
 				6D8F97161E8D15B5008DC62E /* Carthage */,
 				6DA475DD1E8BCDB000B56D9B /* SwiftLint */,
@@ -3096,7 +3096,7 @@
 				6D4E5DBB1F7AB6870020DEE2 /* JoinTeamPersonalCell.xib in Resources */,
 				6D4E5DBC1F7AB6870020DEE2 /* PrivateChatUserCell.xib in Resources */,
 				6D4E5DBD1F7AB6870020DEE2 /* AkkuratPro-Bold.otf in Resources */,
-				6DC1BB202077BF6F008661AF /* GoogleService-Info.plist in Resources */,
+				6DBD695F2093864000D1524F /* GoogleService-Info.plist in Resources */,
 				6D251C3A20348643005081E4 /* ClaimVotingView.xib in Resources */,
 				6D4E5DBE1F7AB6870020DEE2 /* JoinTeamTermsCell.xib in Resources */,
 				94F0CF621FD1B66E007BE39E /* WithdrawCell.xib in Resources */,
@@ -3199,7 +3199,7 @@
 				94E325BE1F07E36E00B2D8C8 /* JoinTeamPersonalCell.xib in Resources */,
 				6D1A9B291F55D306004192AC /* PrivateChatUserCell.xib in Resources */,
 				6D9C808E1EDF17D000FB8C2C /* AkkuratPro-Bold.otf in Resources */,
-				6DC1BB1F2077BF6F008661AF /* GoogleService-Info.plist in Resources */,
+				6DBD695E2093864000D1524F /* GoogleService-Info.plist in Resources */,
 				6D251C3920348634005081E4 /* ClaimVotingView.xib in Resources */,
 				94E325CE1F07FA7E00B2D8C8 /* JoinTeamTermsCell.xib in Resources */,
 				94F0CF611FD1B66E007BE39E /* WithdrawCell.xib in Resources */,
@@ -3374,6 +3374,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		6DBD695C2093853400D1524F /* Google Firebase */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Google Firebase";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"${SRCROOT}/Firebase/Surilla-GoogleService-Info.plist\" \"${SRCROOT}/GoogleService-Info.plist\"\n";
+		};
+		6DBD69602093868300D1524F /* Google Firebase */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Google Firebase";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"${SRCROOT}/Firebase/Teambrella-GoogleService-Info.plist\" \"${SRCROOT}/GoogleService-Info.plist\"\n";
 		};
 		6F2D2231E75AD99947AB1E17 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
