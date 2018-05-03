@@ -1,21 +1,107 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TheirTextCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TheirTextCell" customModule="Surilla" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="219"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <rect key="frame" x="0.0" y="0.0" width="397" height="219"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="M3r-UY-9Rn">
+                        <rect key="frame" x="8" y="0.0" width="267" height="219"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="USO-cf-08H" customClass="RoundImageView" customModule="Surilla" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="179" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="MDs-Uj-Vrq"/>
+                                    <constraint firstAttribute="width" secondItem="USO-cf-08H" secondAttribute="height" multiplier="1:1" id="Mwd-P0-1ya"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="theirTextBubble" translatesAutoresizingMaskIntoConstraints="NO" id="27R-4X-2xh">
+                                <rect key="frame" x="44" y="19" width="4" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="h2Z-ey-2xC"/>
+                                    <constraint firstAttribute="width" constant="300" id="wvN-It-8vW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="755" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ej5-Lf-W8S" customClass="ChatNameLabel" customModule="Surilla" customModuleProvider="target">
+                                <rect key="frame" x="52" y="27" width="0.0" height="192"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcZ-TW-5xq" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
+                                <rect key="frame" x="56" y="27" width="0.0" height="192"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ydp-hZ-XEt">
+                                <rect key="frame" x="60" y="137" width="161" height="82"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yi-gg-2QV" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
+                                <rect key="frame" x="225" y="218" width="42" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="UcZ-TW-5xq" firstAttribute="trailing" secondItem="27R-4X-2xh" secondAttribute="trailing" constant="8" id="DVL-SU-RZg"/>
+                            <constraint firstItem="Ej5-Lf-W8S" firstAttribute="top" secondItem="27R-4X-2xh" secondAttribute="top" constant="8" id="Hbz-Bd-pcT"/>
+                            <constraint firstItem="Ydp-hZ-XEt" firstAttribute="top" secondItem="Ej5-Lf-W8S" secondAttribute="bottom" constant="8" id="JJZ-9t-fga"/>
+                            <constraint firstItem="9Yi-gg-2QV" firstAttribute="trailing" secondItem="27R-4X-2xh" secondAttribute="trailing" constant="-8" id="RY7-Ep-Ymo"/>
+                            <constraint firstItem="Ydp-hZ-XEt" firstAttribute="trailing" secondItem="27R-4X-2xh" secondAttribute="trailing" constant="8" id="Vsm-ti-Pag"/>
+                            <constraint firstItem="Ej5-Lf-W8S" firstAttribute="leading" secondItem="27R-4X-2xh" secondAttribute="leading" constant="8" id="YYm-u9-HF3"/>
+                            <constraint firstItem="Ej5-Lf-W8S" firstAttribute="centerY" secondItem="UcZ-TW-5xq" secondAttribute="centerY" id="Ys4-9r-Yw2"/>
+                            <constraint firstItem="UcZ-TW-5xq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ej5-Lf-W8S" secondAttribute="trailing" constant="4" id="ZXH-ZP-ZbB"/>
+                            <constraint firstItem="Ydp-hZ-XEt" firstAttribute="bottom" secondItem="9Yi-gg-2QV" secondAttribute="top" constant="1" id="Za4-Bk-vDk"/>
+                            <constraint firstItem="UcZ-TW-5xq" firstAttribute="top" secondItem="27R-4X-2xh" secondAttribute="top" constant="8" id="faT-Mw-ZlG"/>
+                            <constraint firstItem="Ydp-hZ-XEt" firstAttribute="leading" secondItem="27R-4X-2xh" secondAttribute="leading" constant="8" id="rVw-j2-nQA"/>
+                            <constraint firstItem="9Yi-gg-2QV" firstAttribute="bottom" secondItem="27R-4X-2xh" secondAttribute="bottom" constant="-6" id="w3N-xI-gv3"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
             </view>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="M3r-UY-9Rn" secondAttribute="trailing" constant="8" id="4ah-Cn-4Ij"/>
+                <constraint firstItem="M3r-UY-9Rn" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="8" id="AJU-CU-YVM"/>
+                <constraint firstItem="M3r-UY-9Rn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FtX-pS-3RV"/>
+                <constraint firstAttribute="bottom" secondItem="M3r-UY-9Rn" secondAttribute="bottom" id="hyM-ko-LsI"/>
+                <constraint firstItem="M3r-UY-9Rn" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="tfr-JB-dyN"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="397" height="219"/>
+            <connections>
+                <outlet property="avatarView" destination="USO-cf-08H" id="PNt-1m-9KF"/>
+                <outlet property="bubbleHeightConstraint" destination="h2Z-ey-2xC" id="4TF-FV-Wbm"/>
+                <outlet property="bubbleWidthConstraint" destination="wvN-It-8vW" id="sQe-rf-iiV"/>
+                <outlet property="nameLabel" destination="Ej5-Lf-W8S" id="hhi-KN-WTR"/>
+                <outlet property="textView" destination="Ydp-hZ-XEt" id="Dje-ve-mCd"/>
+                <outlet property="timeLabel" destination="9Yi-gg-2QV" id="h8N-8A-N5b"/>
+                <outlet property="voteLabel" destination="UcZ-TW-5xq" id="yXC-7O-7in"/>
+            </connections>
+            <point key="canvasLocation" x="207.5" y="172.5"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="theirTextBubble" width="21" height="16"/>
+    </resources>
 </document>
