@@ -381,12 +381,11 @@ private extension UniversalChatVC {
     }
     
     private func registerCells() {
-        collectionView.register(ChatBubbleCell.nib, forCellWithReuseIdentifier: ChatBubbleCell.cellID)
+//        collectionView.register(ChatBubbleCell.nib, forCellWithReuseIdentifier: ChatBubbleCell.cellID)
         collectionView.register(ChatCell.nib, forCellWithReuseIdentifier: ChatCell.cellID)
         collectionView.register(ChatVariousContentCell.self,
                                 forCellWithReuseIdentifier: Constant.textWithImagesCellID)
-        //        collectionView.register(ChatTextCell.self,
-        //                                forCellWithReuseIdentifier: Constant.textCellID)
+        collectionView.register(ChatTextCell.self, forCellWithReuseIdentifier: Constant.textCellID)
         collectionView.register(ChatImageCell.self,
                                 forCellWithReuseIdentifier: Constant.singleImageCellID)
         collectionView.register(ChatSeparatorCell.self,
@@ -581,7 +580,7 @@ extension UniversalChatVC: UICollectionViewDataSource {
         switch dataSource[indexPath] {
         case let model as ChatTextCellModel:
             if model.fragments.count == 1, let fragment = model.fragments.first, case .text = fragment {
-                identifier = ChatBubbleCell.cellID //Constant.textCellID
+                identifier = Constant.textCellID //ChatBubbleCell.cellID
             } else {
                 identifier = Constant.textWithImagesCellID
             }
@@ -632,8 +631,8 @@ extension UniversalChatVC: UICollectionViewDelegate {
                     
                     galleryView.fullscreen(in: self, imageStrings: self.dataSource.allImages)
                 }
-            } else if let cell = cell as? ChatBubbleCell {
-                //} else if let  cell = cell as? ChatTextCell {
+//            } else if let cell = cell as? ChatBubbleCell {
+                } else if let  cell = cell as? ChatTextCell {
                 let size = cloudSize(for: indexPath)
                 cell.prepare(with: model, cloudWidth: size.width, cloudHeight: size.height)
                 cell.avatarView.tag = indexPath.row
