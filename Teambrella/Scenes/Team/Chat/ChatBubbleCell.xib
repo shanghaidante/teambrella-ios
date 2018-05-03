@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChatBubbleCell" customModule="Surilla" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="270"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="405" height="270"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zcg-Ut-Dfv">
+                        <rect key="frame" x="0.0" y="0.0" width="405" height="270"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="bottom" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="oS9-hE-um8">
+                                <rect key="frame" x="8" y="0.0" width="389" height="270"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ufx-ce-BEh" customClass="RoundImageView" customModule="Surilla" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="230" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="98J-3G-o7V"/>
+                                            <constraint firstAttribute="width" secondItem="Ufx-ce-BEh" secondAttribute="height" multiplier="1:1" id="VcR-UE-JHK"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z2k-xg-Sh2">
+                                        <rect key="frame" x="44" y="0.0" width="345" height="270"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="270" id="8fb-QQ-XJT"/>
+                                            <constraint firstAttribute="width" constant="345" id="s5S-bN-4VU"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mR5-MQ-bq8" customClass="ChatNameLabel" customModule="Surilla" customModuleProvider="target">
+                                <rect key="frame" x="60" y="8" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaP-WS-Pi5" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
+                                <rect key="frame" x="347" y="8" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TextView" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0MO-1m-85Z">
+                                <rect key="frame" x="60" y="33.5" width="345" height="209"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRP-Y1-XQu" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
+                                <rect key="frame" x="347" y="243.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oS9-hE-um8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Zcg-Ut-Dfv" secondAttribute="leading" constant="8" id="5Nf-0E-EUA"/>
+                            <constraint firstItem="0MO-1m-85Z" firstAttribute="bottom" secondItem="GRP-Y1-XQu" secondAttribute="top" constant="-1" id="74q-fQ-GSz"/>
+                            <constraint firstItem="mR5-MQ-bq8" firstAttribute="centerY" secondItem="kaP-WS-Pi5" secondAttribute="centerY" id="B9A-WW-Li7"/>
+                            <constraint firstItem="0MO-1m-85Z" firstAttribute="trailing" secondItem="Z2k-xg-Sh2" secondAttribute="trailing" constant="8" id="Ejm-o0-652"/>
+                            <constraint firstItem="oS9-hE-um8" firstAttribute="leading" secondItem="Zcg-Ut-Dfv" secondAttribute="leading" constant="8" id="Gc2-cW-RhD"/>
+                            <constraint firstItem="GRP-Y1-XQu" firstAttribute="trailing" secondItem="Z2k-xg-Sh2" secondAttribute="trailing" constant="-8" id="IrO-Nl-yXl"/>
+                            <constraint firstItem="kaP-WS-Pi5" firstAttribute="trailing" secondItem="Z2k-xg-Sh2" secondAttribute="trailing" constant="-8" id="J6H-Ri-074"/>
+                            <constraint firstItem="0MO-1m-85Z" firstAttribute="top" secondItem="mR5-MQ-bq8" secondAttribute="bottom" constant="5" id="NdE-l3-sHX"/>
+                            <constraint firstItem="mR5-MQ-bq8" firstAttribute="top" secondItem="Z2k-xg-Sh2" secondAttribute="top" constant="8" id="QrW-FA-6f6"/>
+                            <constraint firstItem="oS9-hE-um8" firstAttribute="centerY" secondItem="Zcg-Ut-Dfv" secondAttribute="centerY" id="TRz-pS-UUu"/>
+                            <constraint firstAttribute="trailing" secondItem="oS9-hE-um8" secondAttribute="trailing" constant="8" id="YTr-EO-Mu1"/>
+                            <constraint firstItem="GRP-Y1-XQu" firstAttribute="bottom" secondItem="Z2k-xg-Sh2" secondAttribute="bottom" constant="-6" id="d70-GH-dru"/>
+                            <constraint firstItem="mR5-MQ-bq8" firstAttribute="leading" secondItem="Z2k-xg-Sh2" secondAttribute="leading" constant="8" id="e6R-gS-Qdx"/>
+                            <constraint firstItem="kaP-WS-Pi5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mR5-MQ-bq8" secondAttribute="trailing" constant="8" id="gZs-nH-v6p"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oS9-hE-um8" secondAttribute="trailing" constant="8" id="iaI-Z8-4Ie"/>
+                            <constraint firstItem="kaP-WS-Pi5" firstAttribute="top" secondItem="Z2k-xg-Sh2" secondAttribute="top" constant="8" id="rqm-Do-W0a"/>
+                            <constraint firstItem="0MO-1m-85Z" firstAttribute="leading" secondItem="mR5-MQ-bq8" secondAttribute="leading" id="wAg-Cj-bXW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Zcg-Ut-Dfv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NTm-VE-Sj4"/>
+                <constraint firstItem="Zcg-Ut-Dfv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ynf-pr-gKs"/>
+                <constraint firstAttribute="trailing" secondItem="Zcg-Ut-Dfv" secondAttribute="trailing" id="eEy-tT-Ftk"/>
+                <constraint firstAttribute="bottom" secondItem="Zcg-Ut-Dfv" secondAttribute="bottom" id="g7H-m2-Lz3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="405" height="270"/>
+            <connections>
+                <outlet property="avatarHeightConstraint" destination="98J-3G-o7V" id="Y8b-KR-P4K"/>
+                <outlet property="avatarView" destination="Ufx-ce-BEh" id="Az7-oD-GPC"/>
+                <outlet property="bubble" destination="Z2k-xg-Sh2" id="6oE-1h-x55"/>
+                <outlet property="bubbleHeightConstraint" destination="8fb-QQ-XJT" id="FDt-a1-KaL"/>
+                <outlet property="bubbleWidthConstraint" destination="s5S-bN-4VU" id="i3c-gN-blJ"/>
+                <outlet property="nameLabel" destination="mR5-MQ-bq8" id="s2C-eE-1sO"/>
+                <outlet property="nameLabelLeadingConstraint" destination="e6R-gS-Qdx" id="MC5-d2-wZ5"/>
+                <outlet property="stackViewLeadingConstraint" destination="Gc2-cW-RhD" id="kNx-iA-BOl"/>
+                <outlet property="stackViewTrailingConstraint" destination="YTr-EO-Mu1" id="suj-Ak-Huo"/>
+                <outlet property="textView" destination="0MO-1m-85Z" id="wDk-Qe-tZu"/>
+                <outlet property="textViewTrailingConstraint" destination="Ejm-o0-652" id="1uV-sD-SkU"/>
+                <outlet property="timeLabel" destination="GRP-Y1-XQu" id="eLw-sp-4fi"/>
+                <outlet property="timeLabelTrailingConstraint" destination="IrO-Nl-yXl" id="YdU-VH-vdo"/>
+                <outlet property="voteLabel" destination="kaP-WS-Pi5" id="76u-4W-YXl"/>
+                <outlet property="voteLabelTrailingConstraint" destination="J6H-Ri-074" id="kTd-pv-M7g"/>
+            </connections>
+            <point key="canvasLocation" x="211.5" y="164"/>
+        </collectionViewCell>
+    </objects>
+</document>

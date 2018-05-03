@@ -81,6 +81,10 @@ class BlockHeaderLabel: Label {
     
 }
 
+class ChatNameLabel: Label {
+    
+}
+
 class MessageTitleLabel: Label {
     
 }

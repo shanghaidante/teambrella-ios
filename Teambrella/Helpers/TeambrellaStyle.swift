@@ -119,6 +119,10 @@ struct TeambrellaStyle {
         blockHeader.font = UIFont.teambrellaBold(size: 14)
         blockHeader.textColor = .darkSkyBlue
         
+        let chatName = ChatNameLabel.appearance()
+        chatName.font = UIFont.teambrella(size: 12)
+        chatName.textColor = .darkSkyBlue
+        
         let messageTitle = MessageTitleLabel.appearance()
         messageTitle.font = UIFont.teambrellaBold(size: 15)
         messageTitle.textColor = .dark
@@ -194,6 +198,10 @@ struct TeambrellaStyle {
         let blockHeader = BlockHeaderLabel.appearance()
         blockHeader.font = UIFont.teambrellaBold(size: 14)
         blockHeader.textColor = .darkSkyBlue
+        
+        let chatName = ChatNameLabel.appearance()
+        chatName.font = UIFont.teambrella(size: 12)
+        chatName.textColor = .darkSkyBlue
         
         let messageTitle = MessageTitleLabel.appearance()
         messageTitle.font = UIFont.teambrellaBold(size: 12)
