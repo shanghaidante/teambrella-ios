@@ -20,17 +20,17 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myTextBubble" translatesAutoresizingMaskIntoConstraints="NO" id="8Je-T5-ObM">
-                        <rect key="frame" x="12" y="0.0" width="140" height="231"/>
+                        <rect key="frame" x="17" y="0.0" width="140" height="231"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="140" id="AGJ-AT-b0X"/>
                             <constraint firstAttribute="height" constant="231" id="hW0-rk-7O1"/>
                         </constraints>
                     </imageView>
-                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Sa5-DB-Yn6">
-                        <rect key="frame" x="20" y="0.0" width="150" height="226"/>
+                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Sa5-DB-Yn6">
+                        <rect key="frame" x="25" y="8" width="114" height="209.5"/>
                         <subviews>
                             <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="74L-0P-AIj">
-                                <rect key="frame" x="0.0" y="0.0" width="150" height="20.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="114" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="754" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tex-IL-xbu" customClass="ChatNameLabel" customModule="Surilla" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
@@ -39,24 +39,23 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjV-lh-3n2" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
-                                        <rect key="frame" x="50" y="0.0" width="100" height="20.5"/>
+                                        <rect key="frame" x="50" y="0.0" width="64" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NsU-lC-CpS">
-                                <rect key="frame" x="0.0" y="28.5" width="150" height="197.5"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NsU-lC-CpS">
+                                <rect key="frame" x="0.0" y="28.5" width="114" height="181"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                     </stackView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oV8-kr-rJJ" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
-                        <rect key="frame" x="128" y="216.5" width="42" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oV8-kr-rJJ" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
+                        <rect key="frame" x="97" y="216.5" width="42" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -64,13 +63,13 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="8Je-T5-ObM" secondAttribute="trailing" constant="13" id="2kc-W4-5Nk"/>
-                <constraint firstItem="Sa5-DB-Yn6" firstAttribute="top" secondItem="8Je-T5-ObM" secondAttribute="top" id="4U6-BD-dli"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="8Je-T5-ObM" secondAttribute="trailing" constant="8" id="2kc-W4-5Nk"/>
+                <constraint firstItem="Sa5-DB-Yn6" firstAttribute="top" secondItem="8Je-T5-ObM" secondAttribute="top" constant="8" id="4U6-BD-dli"/>
                 <constraint firstItem="Sa5-DB-Yn6" firstAttribute="leading" secondItem="8Je-T5-ObM" secondAttribute="leading" constant="8" id="CYT-vp-yld"/>
-                <constraint firstItem="oV8-kr-rJJ" firstAttribute="trailing" secondItem="8Je-T5-ObM" secondAttribute="trailing" constant="18" id="TFC-sj-WDm"/>
-                <constraint firstItem="Sa5-DB-Yn6" firstAttribute="trailing" secondItem="8Je-T5-ObM" secondAttribute="trailing" constant="18" id="Zt2-Wa-xna"/>
+                <constraint firstItem="oV8-kr-rJJ" firstAttribute="trailing" secondItem="8Je-T5-ObM" secondAttribute="trailing" constant="-18" id="TFC-sj-WDm"/>
+                <constraint firstItem="Sa5-DB-Yn6" firstAttribute="trailing" secondItem="8Je-T5-ObM" secondAttribute="trailing" constant="-18" id="Zt2-Wa-xna"/>
                 <constraint firstItem="Sa5-DB-Yn6" firstAttribute="bottom" secondItem="oV8-kr-rJJ" secondAttribute="top" constant="1" id="ihb-Ks-MKe"/>
-                <constraint firstItem="8Je-T5-ObM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="12" id="j3R-Np-Kiy"/>
+                <constraint firstItem="8Je-T5-ObM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="8" id="j3R-Np-Kiy"/>
                 <constraint firstItem="8Je-T5-ObM" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="rSj-nL-N9F"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="8Je-T5-ObM" secondAttribute="bottom" id="sZk-oJ-8UD"/>
                 <constraint firstItem="oV8-kr-rJJ" firstAttribute="bottom" secondItem="8Je-T5-ObM" secondAttribute="bottom" constant="-6" id="zcs-Nx-7zX"/>

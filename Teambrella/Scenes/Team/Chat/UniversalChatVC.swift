@@ -381,11 +381,12 @@ private extension UniversalChatVC {
     }
     
     private func registerCells() {
-//        collectionView.register(ChatBubbleCell.nib, forCellWithReuseIdentifier: ChatBubbleCell.cellID)
+        collectionView.register(MyTextCell.nib, forCellWithReuseIdentifier: MyTextCell.cellID)
+        collectionView.register(TheirTextCell.nib, forCellWithReuseIdentifier: TheirTextCell.cellID)
         collectionView.register(ChatCell.nib, forCellWithReuseIdentifier: ChatCell.cellID)
         collectionView.register(ChatVariousContentCell.self,
                                 forCellWithReuseIdentifier: Constant.textWithImagesCellID)
-        collectionView.register(ChatTextCell.self, forCellWithReuseIdentifier: Constant.textCellID)
+//        collectionView.register(ChatTextCell.self, forCellWithReuseIdentifier: Constant.textCellID)
         collectionView.register(ChatImageCell.self,
                                 forCellWithReuseIdentifier: Constant.singleImageCellID)
         collectionView.register(ChatSeparatorCell.self,
@@ -580,7 +581,8 @@ extension UniversalChatVC: UICollectionViewDataSource {
         switch dataSource[indexPath] {
         case let model as ChatTextCellModel:
             if model.fragments.count == 1, let fragment = model.fragments.first, case .text = fragment {
-                identifier = Constant.textCellID //ChatBubbleCell.cellID
+                identifier = model.isMy ? MyTextCell.cellID : TheirTextCell.cellID
+                //                identifier = Constant.textCellID //ChatBubbleCell.cellID
             } else {
                 identifier = Constant.textWithImagesCellID
             }
@@ -631,18 +633,23 @@ extension UniversalChatVC: UICollectionViewDelegate {
                     
                     galleryView.fullscreen(in: self, imageStrings: self.dataSource.allImages)
                 }
-//            } else if let cell = cell as? ChatBubbleCell {
-                } else if let  cell = cell as? ChatTextCell {
+            } else if let cell = cell as? MyTextCell {
                 let size = cloudSize(for: indexPath)
                 cell.prepare(with: model, cloudWidth: size.width, cloudHeight: size.height)
-                cell.avatarView.tag = indexPath.row
-                cell.avatarTap.removeTarget(self, action: #selector(tapAvatar))
-                cell.avatarTap.addTarget(self, action: #selector(tapAvatar))
-                cell.onTapImage = { [weak self] cell, galleryView in
-                    guard let `self` = self else { return }
-                    
-                    galleryView.fullscreen(in: self, imageStrings: self.dataSource.allImages)
-                }
+            } else if let cell = cell as? TheirTextCell {
+                let size = cloudSize(for: indexPath)
+                cell.prepare(with: model, cloudWidth: size.width, cloudHeight: size.height)
+//            } else if let  cell = cell as? ChatTextCell {
+//                let size = cloudSize(for: indexPath)
+//                cell.prepare(with: model, cloudWidth: size.width, cloudHeight: size.height)
+//                cell.avatarView.tag = indexPath.row
+//                cell.avatarTap.removeTarget(self, action: #selector(tapAvatar))
+//                cell.avatarTap.addTarget(self, action: #selector(tapAvatar))
+//                cell.onTapImage = { [weak self] cell, galleryView in
+//                    guard let `self` = self else { return }
+//
+//                    galleryView.fullscreen(in: self, imageStrings: self.dataSource.allImages)
+//                }
             } else if let cell = cell as? ChatImageCell {
                 let size = cloudSize(for: indexPath)
                 cell.prepare(with: model, cloudWidth: size.width, cloudHeight: size.height)

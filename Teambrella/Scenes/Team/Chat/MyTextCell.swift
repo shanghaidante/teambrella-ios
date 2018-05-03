@@ -25,7 +25,13 @@ class MyTextCell: UICollectionViewCell, XIBInitableCell {
     @IBOutlet var bubbleWidthConstraint: NSLayoutConstraint!
     @IBOutlet var bubbleHeightConstraint: NSLayoutConstraint!
     
-    func prepare() {
+    func prepare(with model: ChatCellModel, cloudWidth: CGFloat, cloudHeight: CGFloat) {
+        if let model = model as? ChatTextCellModel/*, model.id != id */{
+            //            id = model.id
+            bubbleWidthConstraint.constant = cloudWidth
+            bubbleHeightConstraint.constant = cloudHeight
+//            textView.text = model.
+        }
         //nameLabel.isHidden = isPrivateChat
         //voteLabel.isHidden = isPrivateChat || vote == nil
     }
