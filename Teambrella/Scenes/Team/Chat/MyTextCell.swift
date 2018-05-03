@@ -17,5 +17,16 @@
 import UIKit
 
 class MyTextCell: UICollectionViewCell, XIBInitableCell {
-
+    @IBOutlet var nameLabel: ChatNameLabel!
+    @IBOutlet var textView: UITextView!
+    @IBOutlet var timeLabel: InfoHelpLabel!
+    @IBOutlet var voteLabel: InfoHelpLabel!
+    
+    @IBOutlet var bubbleWidthConstraint: NSLayoutConstraint!
+    @IBOutlet var bubbleHeightConstraint: NSLayoutConstraint!
+    
+    func prepare() {
+        //nameLabel.isHidden = isPrivateChat
+        //voteLabel.isHidden = isPrivateChat || vote == nil
+    }
 }

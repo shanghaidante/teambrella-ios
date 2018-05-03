@@ -20,8 +20,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="397" height="219"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="M3r-UY-9Rn">
-                        <rect key="frame" x="8" y="0.0" width="267" height="219"/>
+                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="M3r-UY-9Rn">
+                        <rect key="frame" x="8" y="0.0" width="381" height="219"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="USO-cf-08H" customClass="RoundImageView" customModule="Surilla" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="179" width="40" height="40"/>
@@ -31,50 +31,54 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="theirTextBubble" translatesAutoresizingMaskIntoConstraints="NO" id="27R-4X-2xh">
-                                <rect key="frame" x="44" y="19" width="4" height="200"/>
+                                <rect key="frame" x="44" y="19" width="14" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="h2Z-ey-2xC"/>
                                     <constraint firstAttribute="width" constant="300" id="wvN-It-8vW"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="755" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ej5-Lf-W8S" customClass="ChatNameLabel" customModule="Surilla" customModuleProvider="target">
-                                <rect key="frame" x="52" y="27" width="0.0" height="192"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcZ-TW-5xq" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
-                                <rect key="frame" x="56" y="27" width="0.0" height="192"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ydp-hZ-XEt">
-                                <rect key="frame" x="60" y="137" width="161" height="82"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yi-gg-2QV" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
-                                <rect key="frame" x="225" y="218" width="42" height="1"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eSl-vN-WPv">
+                                <rect key="frame" x="62" y="27" width="273" height="192"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hlI-dU-8WV">
+                                        <rect key="frame" x="0.0" y="0.0" width="273" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="755" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ej5-Lf-W8S" customClass="ChatNameLabel" customModule="Surilla" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcZ-TW-5xq" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
+                                                <rect key="frame" x="50" y="0.0" width="223" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ydp-hZ-XEt">
+                                        <rect key="frame" x="0.0" y="28.5" width="273" height="163.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yi-gg-2QV" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
+                                <rect key="frame" x="339" y="219" width="42" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="UcZ-TW-5xq" firstAttribute="trailing" secondItem="27R-4X-2xh" secondAttribute="trailing" constant="8" id="DVL-SU-RZg"/>
-                            <constraint firstItem="Ej5-Lf-W8S" firstAttribute="top" secondItem="27R-4X-2xh" secondAttribute="top" constant="8" id="Hbz-Bd-pcT"/>
-                            <constraint firstItem="Ydp-hZ-XEt" firstAttribute="top" secondItem="Ej5-Lf-W8S" secondAttribute="bottom" constant="8" id="JJZ-9t-fga"/>
+                            <constraint firstItem="eSl-vN-WPv" firstAttribute="trailing" secondItem="27R-4X-2xh" secondAttribute="trailing" constant="8" id="GFq-XS-5Mm"/>
                             <constraint firstItem="9Yi-gg-2QV" firstAttribute="trailing" secondItem="27R-4X-2xh" secondAttribute="trailing" constant="-8" id="RY7-Ep-Ymo"/>
-                            <constraint firstItem="Ydp-hZ-XEt" firstAttribute="trailing" secondItem="27R-4X-2xh" secondAttribute="trailing" constant="8" id="Vsm-ti-Pag"/>
-                            <constraint firstItem="Ej5-Lf-W8S" firstAttribute="leading" secondItem="27R-4X-2xh" secondAttribute="leading" constant="8" id="YYm-u9-HF3"/>
-                            <constraint firstItem="Ej5-Lf-W8S" firstAttribute="centerY" secondItem="UcZ-TW-5xq" secondAttribute="centerY" id="Ys4-9r-Yw2"/>
-                            <constraint firstItem="UcZ-TW-5xq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ej5-Lf-W8S" secondAttribute="trailing" constant="4" id="ZXH-ZP-ZbB"/>
-                            <constraint firstItem="Ydp-hZ-XEt" firstAttribute="bottom" secondItem="9Yi-gg-2QV" secondAttribute="top" constant="1" id="Za4-Bk-vDk"/>
-                            <constraint firstItem="UcZ-TW-5xq" firstAttribute="top" secondItem="27R-4X-2xh" secondAttribute="top" constant="8" id="faT-Mw-ZlG"/>
-                            <constraint firstItem="Ydp-hZ-XEt" firstAttribute="leading" secondItem="27R-4X-2xh" secondAttribute="leading" constant="8" id="rVw-j2-nQA"/>
+                            <constraint firstItem="eSl-vN-WPv" firstAttribute="top" secondItem="27R-4X-2xh" secondAttribute="top" constant="8" id="RhU-xc-qk5"/>
+                            <constraint firstItem="eSl-vN-WPv" firstAttribute="bottom" secondItem="9Yi-gg-2QV" secondAttribute="top" id="hYi-wK-nho"/>
+                            <constraint firstItem="eSl-vN-WPv" firstAttribute="leading" secondItem="27R-4X-2xh" secondAttribute="leading" constant="18" id="py2-dT-2HY"/>
                             <constraint firstItem="9Yi-gg-2QV" firstAttribute="bottom" secondItem="27R-4X-2xh" secondAttribute="bottom" constant="-6" id="w3N-xI-gv3"/>
                         </constraints>
                     </stackView>
