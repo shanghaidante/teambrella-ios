@@ -16,11 +16,6 @@
 
 import UIKit
 
-class TheirTextCell: UICollectionViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+class TheirTextCell: UICollectionViewCell, XIBInitableCell {
 
 }
