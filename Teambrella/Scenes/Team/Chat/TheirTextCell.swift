@@ -38,6 +38,7 @@ class TheirTextCell: UICollectionViewCell, XIBInitableCell {
                 avatarView.isHidden = true
             }
         }
+        //avatarView.isHidden = isPrivateChat
         //nameLabel.isHidden = isPrivateChat
         //voteLabel.isHidden = isPrivateChat || vote == nil
     }
