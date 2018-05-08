@@ -20,17 +20,16 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myTextBubble" translatesAutoresizingMaskIntoConstraints="NO" id="8Je-T5-ObM">
-                        <rect key="frame" x="17" y="0.0" width="140" height="231"/>
+                        <rect key="frame" x="39" y="0.0" width="118" height="231"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="140" id="AGJ-AT-b0X"/>
-                            <constraint firstAttribute="height" constant="231" id="hW0-rk-7O1"/>
+                            <constraint firstAttribute="width" constant="118" id="V8R-vx-ode"/>
                         </constraints>
                     </imageView>
-                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Sa5-DB-Yn6">
-                        <rect key="frame" x="25" y="8" width="114" height="209.5"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Sa5-DB-Yn6">
+                        <rect key="frame" x="47" y="8" width="92" height="217"/>
                         <subviews>
-                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="74L-0P-AIj">
-                                <rect key="frame" x="0.0" y="0.0" width="114" height="20.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="74L-0P-AIj">
+                                <rect key="frame" x="0.0" y="0.0" width="92" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="754" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tex-IL-xbu" customClass="ChatNameLabel" customModule="Surilla" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
@@ -39,7 +38,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjV-lh-3n2" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
-                                        <rect key="frame" x="50" y="0.0" width="64" height="20.5"/>
+                                        <rect key="frame" x="50" y="0.0" width="42" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -47,38 +46,34 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NsU-lC-CpS">
-                                <rect key="frame" x="0.0" y="28.5" width="114" height="181"/>
+                                <rect key="frame" x="0.0" y="24.5" width="92" height="168"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oV8-kr-rJJ" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="196.5" width="92" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                     </stackView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oV8-kr-rJJ" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
-                        <rect key="frame" x="97" y="216.5" width="42" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="8Je-T5-ObM" secondAttribute="trailing" constant="8" id="2kc-W4-5Nk"/>
                 <constraint firstItem="Sa5-DB-Yn6" firstAttribute="top" secondItem="8Je-T5-ObM" secondAttribute="top" constant="8" id="4U6-BD-dli"/>
                 <constraint firstItem="Sa5-DB-Yn6" firstAttribute="leading" secondItem="8Je-T5-ObM" secondAttribute="leading" constant="8" id="CYT-vp-yld"/>
-                <constraint firstItem="oV8-kr-rJJ" firstAttribute="trailing" secondItem="8Je-T5-ObM" secondAttribute="trailing" constant="-18" id="TFC-sj-WDm"/>
-                <constraint firstItem="Sa5-DB-Yn6" firstAttribute="trailing" secondItem="8Je-T5-ObM" secondAttribute="trailing" constant="-18" id="Zt2-Wa-xna"/>
-                <constraint firstItem="Sa5-DB-Yn6" firstAttribute="bottom" secondItem="oV8-kr-rJJ" secondAttribute="top" constant="1" id="ihb-Ks-MKe"/>
-                <constraint firstItem="8Je-T5-ObM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="8" id="j3R-Np-Kiy"/>
+                <constraint firstItem="Sa5-DB-Yn6" firstAttribute="bottom" secondItem="8Je-T5-ObM" secondAttribute="bottom" constant="-6" id="LCJ-Qj-OjE"/>
+                <constraint firstItem="8Je-T5-ObM" firstAttribute="trailing" secondItem="Sa5-DB-Yn6" secondAttribute="trailing" constant="18" id="Zt2-Wa-xna"/>
                 <constraint firstItem="8Je-T5-ObM" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="rSj-nL-N9F"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="8Je-T5-ObM" secondAttribute="bottom" id="sZk-oJ-8UD"/>
-                <constraint firstItem="oV8-kr-rJJ" firstAttribute="bottom" secondItem="8Je-T5-ObM" secondAttribute="bottom" constant="-6" id="zcs-Nx-7zX"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="165" height="231"/>
             <connections>
-                <outlet property="bubbleHeightConstraint" destination="hW0-rk-7O1" id="BC3-xa-URM"/>
-                <outlet property="bubbleWidthConstraint" destination="AGJ-AT-b0X" id="ELM-TW-TBu"/>
+                <outlet property="bubbleWidthConstraint" destination="V8R-vx-ode" id="hf6-MN-6zy"/>
                 <outlet property="nameLabel" destination="tex-IL-xbu" id="JXJ-wK-MDg"/>
                 <outlet property="textView" destination="NsU-lC-CpS" id="awG-AD-g6m"/>
                 <outlet property="timeLabel" destination="oV8-kr-rJJ" id="RvA-hc-O2l"/>

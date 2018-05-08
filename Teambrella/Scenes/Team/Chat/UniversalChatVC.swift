@@ -138,8 +138,6 @@ final class UniversalChatVC: UIViewController, Routable {
             self.slidingView.updateChatModel(model: model)
         }
         
-        dataSource.isLoadNextNeeded = true
-        
         title = ""
         let session = service.session
         slidingView.setupViews(with: self, session: session)
@@ -165,7 +163,8 @@ final class UniversalChatVC: UIViewController, Routable {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        collectionView.reloadData()
+        //collectionView.reloadData()
+        dataSource.isLoadNextNeeded = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -635,10 +634,10 @@ extension UniversalChatVC: UICollectionViewDelegate {
                 }
             } else if let cell = cell as? MyTextCell {
                 let size = cloudSize(for: indexPath)
-                cell.prepare(with: model, cloudWidth: size.width, cloudHeight: size.height)
+                cell.prepare(with: model, cloudWidth: size.width)
             } else if let cell = cell as? TheirTextCell {
                 let size = cloudSize(for: indexPath)
-                cell.prepare(with: model, cloudWidth: size.width, cloudHeight: size.height)
+                cell.prepare(with: model, cloudWidth: size.width)
 //            } else if let  cell = cell as? ChatTextCell {
 //                let size = cloudSize(for: indexPath)
 //                cell.prepare(with: model, cloudWidth: size.width, cloudHeight: size.height)
@@ -717,7 +716,8 @@ extension UniversalChatVC: UICollectionViewDelegateFlowLayout {
         switch dataSource[indexPath] {
         case _ as ChatTextCellModel:
             let size = cloudSize(for: indexPath)
-            return CGSize(width: collectionView.bounds.width, height: size.height)
+            let cellsize = CGSize(width: collectionView.bounds.width, height: size.height)
+            return cellsize
         case _ as ChatImageCellModel:
             let size = cloudSize(for: indexPath)
             return CGSize(width: collectionView.bounds.width, height: size.height)

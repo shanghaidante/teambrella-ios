@@ -23,14 +23,12 @@ class TheirTextCell: UICollectionViewCell, XIBInitableCell {
     @IBOutlet var textView: UITextView!
     @IBOutlet var timeLabel: InfoHelpLabel!
     
-    @IBOutlet var bubbleHeightConstraint: NSLayoutConstraint!
     @IBOutlet var bubbleWidthConstraint: NSLayoutConstraint!
     
-    func prepare(with model: ChatCellModel, cloudWidth: CGFloat, cloudHeight: CGFloat) {
+    func prepare(with model: ChatCellModel, cloudWidth: CGFloat) {
         if let model = model as? ChatTextCellModel/*, model.id != id */{
             //            id = model.id
             bubbleWidthConstraint.constant = cloudWidth
-            bubbleHeightConstraint.constant = cloudHeight
             if model.userAvatar != nil {
                 avatarView.isHidden = false
                 avatarView.show(model.userAvatar)

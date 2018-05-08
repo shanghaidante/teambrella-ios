@@ -21,7 +21,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="M3r-UY-9Rn">
-                        <rect key="frame" x="8" y="0.0" width="381" height="219"/>
+                        <rect key="frame" x="8" y="0.0" width="134" height="219"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="USO-cf-08H" customClass="RoundImageView" customModule="Surilla" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="179" width="40" height="40"/>
@@ -31,71 +31,63 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="theirTextBubble" translatesAutoresizingMaskIntoConstraints="NO" id="27R-4X-2xh">
-                                <rect key="frame" x="44" y="19" width="14" height="200"/>
+                                <rect key="frame" x="44" y="0.0" width="90" height="219"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="h2Z-ey-2xC"/>
-                                    <constraint firstAttribute="width" constant="300" id="wvN-It-8vW"/>
+                                    <constraint firstAttribute="width" constant="90" id="wvN-It-8vW"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eSl-vN-WPv">
-                                <rect key="frame" x="62" y="27" width="273" height="192"/>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eSl-vN-WPv">
+                        <rect key="frame" x="70" y="8" width="72" height="217"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hlI-dU-8WV">
+                                <rect key="frame" x="0.0" y="0.0" width="72" height="20.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hlI-dU-8WV">
-                                        <rect key="frame" x="0.0" y="0.0" width="273" height="20.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="755" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ej5-Lf-W8S" customClass="ChatNameLabel" customModule="Surilla" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcZ-TW-5xq" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
-                                                <rect key="frame" x="50" y="0.0" width="223" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ydp-hZ-XEt">
-                                        <rect key="frame" x="0.0" y="28.5" width="273" height="163.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="755" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ej5-Lf-W8S" customClass="ChatNameLabel" customModule="Surilla" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcZ-TW-5xq" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="0.0" width="22" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yi-gg-2QV" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
-                                <rect key="frame" x="339" y="219" width="42" height="0.0"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ydp-hZ-XEt">
+                                <rect key="frame" x="0.0" y="28.5" width="72" height="180.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yi-gg-2QV" customClass="InfoHelpLabel" customModule="Surilla" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="217" width="72" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="eSl-vN-WPv" firstAttribute="trailing" secondItem="27R-4X-2xh" secondAttribute="trailing" constant="8" id="GFq-XS-5Mm"/>
-                            <constraint firstItem="9Yi-gg-2QV" firstAttribute="trailing" secondItem="27R-4X-2xh" secondAttribute="trailing" constant="-8" id="RY7-Ep-Ymo"/>
-                            <constraint firstItem="eSl-vN-WPv" firstAttribute="top" secondItem="27R-4X-2xh" secondAttribute="top" constant="8" id="RhU-xc-qk5"/>
-                            <constraint firstItem="eSl-vN-WPv" firstAttribute="bottom" secondItem="9Yi-gg-2QV" secondAttribute="top" id="hYi-wK-nho"/>
-                            <constraint firstItem="eSl-vN-WPv" firstAttribute="leading" secondItem="27R-4X-2xh" secondAttribute="leading" constant="18" id="py2-dT-2HY"/>
-                            <constraint firstItem="9Yi-gg-2QV" firstAttribute="bottom" secondItem="27R-4X-2xh" secondAttribute="bottom" constant="-6" id="w3N-xI-gv3"/>
-                        </constraints>
                     </stackView>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="M3r-UY-9Rn" secondAttribute="trailing" constant="8" id="4ah-Cn-4Ij"/>
                 <constraint firstItem="M3r-UY-9Rn" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="8" id="AJU-CU-YVM"/>
+                <constraint firstItem="eSl-vN-WPv" firstAttribute="top" secondItem="27R-4X-2xh" secondAttribute="top" constant="8" id="DYy-hU-F5K"/>
                 <constraint firstItem="M3r-UY-9Rn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FtX-pS-3RV"/>
+                <constraint firstItem="eSl-vN-WPv" firstAttribute="trailing" secondItem="27R-4X-2xh" secondAttribute="trailing" id="ejZ-Xc-KWd"/>
                 <constraint firstAttribute="bottom" secondItem="M3r-UY-9Rn" secondAttribute="bottom" id="hyM-ko-LsI"/>
-                <constraint firstItem="M3r-UY-9Rn" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="tfr-JB-dyN"/>
+                <constraint firstItem="eSl-vN-WPv" firstAttribute="leading" secondItem="27R-4X-2xh" secondAttribute="leading" constant="18" id="rlB-WD-mS7"/>
+                <constraint firstItem="eSl-vN-WPv" firstAttribute="bottom" secondItem="27R-4X-2xh" secondAttribute="bottom" constant="6" id="yPC-wS-Rhb"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="397" height="219"/>
             <connections>
                 <outlet property="avatarView" destination="USO-cf-08H" id="PNt-1m-9KF"/>
-                <outlet property="bubbleHeightConstraint" destination="h2Z-ey-2xC" id="4TF-FV-Wbm"/>
                 <outlet property="bubbleWidthConstraint" destination="wvN-It-8vW" id="sQe-rf-iiV"/>
                 <outlet property="nameLabel" destination="Ej5-Lf-W8S" id="hhi-KN-WTR"/>
                 <outlet property="textView" destination="Ydp-hZ-XEt" id="Dje-ve-mCd"/>
